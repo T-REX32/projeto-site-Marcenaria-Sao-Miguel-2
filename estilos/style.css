@@ -5,8 +5,11 @@
 }
 
 body {
-    background-color:whitesmoke;
+    background-image: url(../imagenssite/imagem\ de\ fundo\ do\ site.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 main {
     background-color: blue;
