@@ -35,3 +35,15 @@ article {
     margin: auto;
     margin-top: 100px;
 }
+
+div {
+    background-color: rgb(208, 206, 206);
+    display: inline-block;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+    margin-top: 10px;
+    
+    
+}
