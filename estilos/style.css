@@ -1,0 +1,50 @@
+@charset "UTF-8";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 20px;
+}
+
+body {
+    background-image: url(../imagenssite/imagem\ de\ fundo\ do\ site.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+main {
+    background-color: blue;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+header {
+    background-color:rgb(52, 232, 232);
+    width: 1000px;
+    height: 100px;
+    font-size: 20px;
+    margin: auto;
+    padding-top: 5px ;
+    text-align: center;
+}
+
+article {
+    background-color: aquamarine;
+    width: 600px;
+    height: 250px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+div {
+    background-color: rgb(208, 206, 206);
+    display: inline-block;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+    
+}
