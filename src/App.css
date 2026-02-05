@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #1e3a5f;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d5a8c;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1e3a5f;
+}
+
+/* Animações globais */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}

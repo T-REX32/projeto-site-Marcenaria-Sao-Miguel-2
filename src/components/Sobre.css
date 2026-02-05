@@ -1,0 +1,181 @@
+.sobre {
+    background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%);
+    padding: 4rem 2rem;
+    min-height: 600px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.sobre-header h2 {
+    font-size: 2.5rem;
+    color: #1e3a5f;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sobre-header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0;
+}
+
+.conteudo-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.sobre-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sobre-bloco {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #2d5a8c;
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.sobre-bloco h3 {
+    font-size: 1.3rem;
+    color: #1e3a5f;
+    margin: 0 0 0.8rem 0;
+    font-weight: 600;
+}
+
+.sobre-bloco p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0 0 0.8rem 0;
+    line-height: 1.6;
+}
+
+.sobre-bloco ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.sobre-bloco li {
+    color: #555;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.diferenciais {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+.diferenciais h3 {
+    font-size: 1.5rem;
+    color: #1e3a5f;
+    margin: 0 0 1.5rem 0;
+    font-weight: 600;
+}
+
+.diferenciais-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.diferencial-card {
+    background: linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%);
+    padding: 1.2rem;
+    border-radius: 8px;
+    border: 2px solid #e1e8ed;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.diferencial-card:hover {
+    border-color: #2d5a8c;
+    box-shadow: 0 4px 12px rgba(45, 90, 140, 0.15);
+    transform: translateX(5px);
+}
+
+.diferencial-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.diferencial-card h4 {
+    font-size: 1.1rem;
+    color: #1e3a5f;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.diferencial-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+
+    .sobre-header h2 {
+        font-size: 2rem;
+    }
+
+    .conteudo-sobre {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
+    }
+}
